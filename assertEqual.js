@@ -2,10 +2,10 @@
 const assertEqual = function(actual, expected) {
   // if first and second parameters are strictly identical,
   if (actual === expected) {
-    console.log("😎😎 Assertion Passed: " + actual + " === " + expected);
+    console.log(`😎😎 Assertion Passed: ${actual} === ${expected}`);
     // if first and second parameters are unidentical,
   } else {
-    console.log("🤯🤯 Assertion Failed: " + actual + " !== " + expected);
+    console.log(`🤯🤯 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
