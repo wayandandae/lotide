@@ -18,7 +18,7 @@ const eqArrays = function(arrayOne, arrayTwo) {
   }
   // return boolean true if code inside for-loop is not triggered
   return true;
-}
+};
 
 // TEST CASES
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
