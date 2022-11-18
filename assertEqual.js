@@ -1,4 +1,4 @@
-// FUNCTION IMPLEMENTATION
+// compare two parameters strictly, type must match
 const assertEqual = function(actual, expected) {
   // if first and second parameters are strictly identical,
   if (actual === expected) {
