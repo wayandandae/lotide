@@ -1,13 +1,12 @@
 const eqArrays = require('./eqArrays');
 
 // compare two arrays and print out assertion message
-const assertArraysEqual = function(arrayOne, arrayTwo) {
-  // eqArrays either returns true or false
+const assertArraysEqual = (arrayOne, arrayTwo) =>
   eqArrays(arrayOne, arrayTwo) ?
-    console.log(`😎 Assertion Passed: [${arrayOne}] is identical to [${arrayTwo}]`) : // true==pass message
-    console.log(`🤯 Assertion Failed: [${arrayOne}] is NOT identical to [${arrayTwo}]`); // false==fail message
-};
-
+    // if arrayOne and arrayTwo return true for equal arrays test,
+    console.log(`😎 Assertion Passed: [${arrayOne}] === [${arrayTwo}]`) :
+    // if not,
+    console.log(`🤯 Assertion Failed: [${arrayOne}] !== [${arrayTwo}]`);
 
 
 module.exports = assertArraysEqual;
