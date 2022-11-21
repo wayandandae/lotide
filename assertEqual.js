@@ -1,20 +1,10 @@
-// compare two parameters strictly, type must match
-const assertEqual = function(actual, expected) {
-  // if first and second parameters are strictly identical,
-  if (actual === expected) {
-    console.log(`😎😎 Assertion Passed: ${actual} === ${expected}`);
-    // if first and second parameters are unidentical,
-  } else {
+// compare two arguments strictly, types must match
+const assertEqual = (actual, expected) =>
+  actual === expected ?
+    // if first and second arguments are strictly identical,
+    console.log(`😎😎 Assertion Passed: ${actual} === ${expected}`) :
+    // if first and second arguments are not identical,
     console.log(`🤯🤯 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
 
-// TEST CODE
-// unidentical strings
-assertEqual("Lighthouse Labs", "Bootcamp");
-// identical numbers
-assertEqual(1, 1);
-// identical strings
-assertEqual("Good", "Good");
-// unidentical numbers
-assertEqual(3, 5);
+
+module.exports = assertEqual;
